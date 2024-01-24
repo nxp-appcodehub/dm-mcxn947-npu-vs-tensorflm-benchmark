@@ -1,0 +1,27 @@
+<data:item xmlns:data="data" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="data ../../xsd/alp.xsd" id="dm-mcxn947-npu-vs-tensorflm-benchmark" type="demo" format="projectfile" versionSchema="1.0.0" name="MCXN947 NPU vs Tensorflm Benchmark">
+    <display_title>
+        MCXN947 NPU vs Tensorflm Benchmark
+    </display_title>
+    <overview>
+        <![CDATA[This demo shows the performance
+benchmark between NPU and TensorFLM. Real time
+results are displayed on TFT LCD. On-chip NPU
+accelerates AI/ML algorithms and improves the performance.]]>
+    </overview>
+    <toolchains>
+        <toolchain name="mcux"></toolchain>
+    </toolchains>
+    <families>
+        <family name="mcx"></family>
+    </families>
+    <nxp_compatible_hw>
+        <hw id="FRDM-MCXN947"></hw>
+    </nxp_compatible_hw>
+    <peripherals>
+        <peripheral name="display"></peripheral>
+    </peripherals>
+    <categories>
+        <category name="aiml"></category>
+        <category name="graphics"></category>
+    </categories>
+</data:item>

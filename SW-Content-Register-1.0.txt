@@ -1,0 +1,126 @@
+NXP Software Content Register
+
+Package:                   dm-mcxn947-npu-vs-tensorflm-benchmark
+
+Version:                   1.0
+Outgoing License:          LA_OPT_NXP_Software_License v53 December 2023 - Additional Distribution License granted, license in Section 2.3 applies
+License File:              LICENSE
+Description and comments:  This demo shows the performance benchmark between NPU and TensorFLM. Real time results are displayed on TFT LCD. On-chip NPU accelerates AI/ML algorithms and improves the performance.
+Release Location:          https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark
+Origin:                    NXP (proprietary)
+                           NXP (BSD-3-Clause)
+                           cmsis - ARM (Apache-2.0) - https://github.com/ARM-software/CMSIS_5/
+                           TensorFlow Lite - Google Inc (Apache-2.0) - https://github.com/tensorflow/tensorflow/
+                           gemmlowp - Google Inc (Apache-2.0) - https://github.com/google/gemmlowp
+                           FlatBuffers - Google Inc (Apache-2.0) - https://github.com/google/flatbuffers
+                           lvgl - Gabor Kiss-Vamosi (MIT) - https://github.com/lvgl/lvgl 
+                           lvgl_tlsf - Matthew Conte (BSD-3-Clause) - https://github.com/lvgl/lvgl
+                           lv_printf - Marco Paland (MIT) - https://github.com/lvgl/lvgl
+                           qrcode - Project Nayuki (MIT) - https://github.com/lvgl/lvgl
+                           png - Lode Vandevenne (MIT) - https://github.com/lvgl/lvgl
+                           jpg - ChaN (MIT) - https://github.com/lvgl/lvgl
+
+cmsis                      Name: CMSIS                                       
+                           Version: 5.4.0                                    
+                           Outgoing License: Apache License 2.0              
+                           License File: CMSIS/LICENSE.txt                  
+                           Format: source code                               
+                           Description and comments: Vendor-independent hardware          
+                           abstraction layer for microcontrollers that are   
+                           based on Arm Cortex processors, distributed by    
+                           ARM. cores 
+                           Release location：https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/CMSIS/    
+                           Origin: ARM (Apache-2.0) - https://github.com/ARM-software/CMSIS_5/ 
+
+TensorFlow Lite            Name: TensorFlow Lite                             
+                           Version: 2.3.1                                    
+                           Outgoing License: Apache License 2.0                      
+                           License File: eiq/tensorflow-lite/LICENSE           
+                           Format: source code                              
+                           Description: Software library for running machine learning models on mobile and embedded devices    
+                           Release location: https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/eiq/tensorflow-lite/
+                                             https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/source
+                           Origin: Google Inc (Apache-2.0) - https://github.com/tensorflow/tensorflow      
+
+MLPerf models              Name: MLPerf Tiny reference model                           
+                           Version: NA                                
+                           Outgoing License: Apache License 2.0                      
+                           License File: source/model/LICENSE.md           
+                           Format: .tflite                             
+                           Description: MLPerf Tiny reference model   
+                           Release location: https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/source/model
+                           Origin: MLCommons (Apache-2.0) - https://github.com/mlcommons/tiny/tree/e1b857bcbd22029e27b5350460d44f00d0cb462a
+
+gemmlowp                   Name:gemmlowp
+                           Outgoing License: Apache-2.0                      
+                           License File: eiq/tensorflow-lite/third_party/gemmlowp/LICENSE            
+                           Format: source code                              
+                           Description: a small self-contained low-precision GEMM library    
+                           Release location: https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/eiq/tensorflow-lite/third_party/gemmlowp/
+                           Origin: Google Inc (Apache-2.0) - https://github.com/google/gemmlowp
+
+FlatBuffers                Name:FlatBuffers
+                           Outgoing License: Apache-2.0                      
+                           License File: eiq/tensorflow-lite/third_party/flatbuffers/LICENSE.txt            
+                           Format: source code                              
+                           Description: is a cross platform serialization library architected for
+                                        maximum memory efficiency.    
+                           Release location: https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/eiq/tensorflow-lite/third_party/flatbuffers/
+                           Origin: Google Inc (Apache-2.0) - https://github.com/google/flatbuffers
+
+lvgl                       Name: LVGL                                        
+                           Version: 8.3.10                                   
+                           Outgoing License: MIT                             
+                           License File: MIT 
+                           Format: source code                               
+                           Description and comments: Light and Versatile Graphics Library (LVGL)                                            
+                           Release location: https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/lvgl/
+                                             https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/source                       
+                           Origin: Gabor Kiss-Vamosi - https://github.com/lvgl/lvgl      
+
+lvgl_tlsf                  Name: LVGL tlsf                                       
+                           Version: 8.3.10                                   
+                           Outgoing License: BSD-3-Clause                               
+                           License File: BSD-3-Clause 
+                           Format: source code                               
+                           Description and comments: Light and Versatile Graphics Library (LVGL)                                            
+                           Release location: https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/lvgl/lvgl/src/misc/lv_tlsf.h                                 
+                           Origin: Matthew Conte - https://github.com/lvgl/lvgl  
+
+lv_printf                  Name: LVGL printf                                        
+                           Version: 8.3.10                                   
+                           Outgoing License: MIT                              
+                           License File: MIT 
+                           Format: source code                               
+                           Description and comments: LVGL print function                                          
+                           Release location: https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/lvgl/lvgl/src/misc/lv_printf.h                   
+                           Origin: Marco Paland - https://github.com/lvgl/lvgl   
+
+qrcode                     Name: QR Code                                        
+                           Version: 8.3.10                                   
+                           Outgoing License: MIT                              
+                           License File: MIT 
+                           Format: source code                               
+                           Description and comments: QR Code function                                          
+                           Release location: https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/lvgl/lvgl/src/extra/libs/qrcode/qrcodegen.c
+                                             https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/lvgl/lvgl/src/extra/libs/qrcode/qrcodegen.h                    
+                           Origin: Project Nayuki - https://github.com/lvgl/lvgl
+
+png                        Name: png                                        
+                           Version: 8.3.10                                   
+                           Outgoing License: MIT                             
+                           License File: MIT 
+                           Format: source code                               
+                           Description and comments: png function                                          
+                           Release location: https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/lvgl/lvgl/src/extra/libs/png/lodepng.c
+                                             https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/lvgl/lvgl/src/extra/libs/png/lodepng.h            
+                           Origin: Lode Vandevenne - https://github.com/lvgl/lvgl
+
+jpg                        Name: jpg                                        
+                           Version: 8.3.10                                   
+                           Outgoing License: MIT                             
+                           License File: MIT 
+                           Format: source code                               
+                           Description and comments: jpg function                                          
+                           Release location: https://github.com/nxp-appcodehub/dm-mcxn947-npu-vs-tensorflm-benchmark/tree/main/lvgl/lvgl/src/extra/libs/sjpg/tjpgd.c                                        
+                           Origin: ChaN - https://github.com/lvgl/lvgl
