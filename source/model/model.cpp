@@ -25,6 +25,7 @@ limitations under the License.
 #include "fsl_debug_console.h"
 #include "model.h"
 #include "model_data.h"
+#include "timer.h"
 
 static const tflite::Model* s_model = nullptr;
 static tflite::MicroInterpreter* s_interpreter = nullptr;
@@ -88,7 +89,7 @@ status_t MODEL_Init(void)
     return kStatus_Success;
 }
 
-status_t MODEL_Invoke(const uint8_t* model_data)
+status_t MODEL_Invoke(const uint8_t* model_data, uint32_t *during)
 {
 
     s_model = tflite::GetModel(model_data);
@@ -118,12 +119,15 @@ status_t MODEL_Invoke(const uint8_t* model_data)
 
     // Get information about the memory area to use for the model's input.
     inputTensor = interpreter.input(0);
-
+    uint32_t startTime = TIMER_GetTimeInUS();
     if (interpreter.Invoke() != kTfLiteOk)
     {
         PRINTF("Invoke failed!\r\n");
         return kStatus_Fail;
     }
+    uint32_t endTime = TIMER_GetTimeInUS();
+
+    *during = endTime - startTime;
 
     return kStatus_Success;
 }

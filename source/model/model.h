@@ -40,7 +40,7 @@ uint8_t* MODEL_GetInputTensorData(tensor_dims_t* dims, tensor_type_t* type);
 uint8_t* MODEL_GetOutputTensorData(tensor_dims_t* dims, tensor_type_t* type);
 void MODEL_ConvertInput(uint8_t* data, tensor_dims_t* dims, tensor_type_t type);
 status_t MODEL_RunInference(void);
-status_t MODEL_Invoke(const uint8_t* model_data);
+status_t MODEL_Invoke(const uint8_t* model_data, uint32_t *during);
 const char* MODEL_GetModelName(void);
 
 #if defined(__cplusplus)

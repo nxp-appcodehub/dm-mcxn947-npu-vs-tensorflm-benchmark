@@ -104,16 +104,15 @@ int run_model(uint8_t id, bool show_profile)
     model_data = mlperf_models[id];
     
     PRINTF("---\r\nRun Model: %s\r\n",mlperf_model_name[id]);
-    uint32_t startTime = TIMER_GetTimeInUS();
-    if (MODEL_Invoke(model_data) != kStatus_Success)
+    uint32_t startTime = 0;
+    if (MODEL_Invoke(model_data,&g_usTotal) != kStatus_Success)
     {
         PRINTF("Failed initializing model" EOL);
         for (;;) {}
     }
-    uint32_t endTime = TIMER_GetTimeInUS();
-    PRINTF("Inference during %d.%03d ms\r\n",(endTime-startTime) / 1000, (endTime-startTime) % 1000);
+
+    PRINTF("Inference during %d.%03d ms\r\n",(g_usTotal) / 1000, (g_usTotal) % 1000);
     
-    g_usTotal = endTime - startTime;
     /* round up the ms */    
     g_msModelCalTime[id] = (g_usTotal % 1000) >= 500? 1:0;
     g_msModelCalTime[id] += g_usTotal / 1000;

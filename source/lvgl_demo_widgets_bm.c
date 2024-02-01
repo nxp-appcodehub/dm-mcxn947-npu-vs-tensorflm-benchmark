@@ -159,12 +159,6 @@ int main(void)
 
     DEMO_SetupTick();
 
-//    TIMER_Init();
-//
-//
-//    NVIC_SetPriority(SysTick_IRQn, 1);
-//	NVIC_EnableIRQ(SysTick_IRQn);
-
 	benchmark_run_all(0);
 
 #if LV_USE_LOG

@@ -4,16 +4,15 @@
 ## MCXN947 NPU vs Tensorflm Benchmark
 
 This demo is based on [MLPerf™ Tiny Deep Learning Benchmarks for Embedded Devices](https://github.com/mlcommons/tiny), it shows the performance benchmark between NPU and TensorFLM. 
-Real time results are displayed on TFT LCD, On-chip NPU accelerates AI/ML algorithms and improves the performance.
-Please note that this result is not verified by MLCommons Association.
+Real time results are displayed on TFT LCD, On-chip NPU accelerates AI/ML algorithms and improves the performance. **The results come from internal flash model inference, Optimization Level is -O3.** Please note that this result is not verified by MLCommons Association.
 
 
 |       Use Case       |                   Description                   |       Cortex-M33 Inference time       |    NPU Inference time   |    CM33 / NPU ratio    |
 |----------------------|-------------------------------------------------|---------------------------------------|-------------------------|------------------------|
-|   Anomaly Detection  | Detecting anomalies in machine operating sounds |              9.452ms                  |       4.174ms           |          2.26          |
-|   Keyword Spotting   |        Small vocabulary keyword spotting        |              67.794ms                 |       7.164ms           |          9.46          |
-| Image Classification |            Small image classification           |              247.253ms                |       10.6ms            |         23.33          |
-|   Visual Wake Words  |           Binary image classification           |              218.563ms                |       10.169ms          |         21.49          |
+|   Anomaly Detection  | Detecting anomalies in machine operating sounds |              5.302ms                  |       0.816ms           |          6.50          |
+|   Keyword Spotting   |        Small vocabulary keyword spotting        |              57.514ms                 |       3.650ms           |         15.76          |
+| Image Classification |            Small image classification           |              239.036ms                |       6.399ms           |         37.36          |
+|   Visual Wake Words  |           Binary image classification           |              184.935ms                |       6.568ms           |         28.16          |
 
 >**Note**: Unverified MLPerf® Tiny v1.0. Result not verified by MLCommons Association. The MLPerf name and logo are registered and unregistered trademarks of MLCommons Association in the United States and other countries. All rights reserved. Unauthorized use strictly prohibited. See www.mlcommons.org for more information. 
 

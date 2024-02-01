@@ -61,7 +61,7 @@
 
 /*! @brief Definition to support advanced format specifier for printf. */
 #ifndef PRINTF_ADVANCED_ENABLE
-#define PRINTF_ADVANCED_ENABLE 0U
+#define PRINTF_ADVANCED_ENABLE 1U
 #endif /* PRINTF_ADVANCED_ENABLE */
 
 /*! @brief Definition to support advanced format specifier for scanf. */

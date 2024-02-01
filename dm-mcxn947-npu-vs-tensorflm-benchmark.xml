@@ -17,11 +17,14 @@ accelerates AI/ML algorithms and improves the performance.]]>
     <nxp_compatible_hw>
         <hw id="FRDM-MCXN947"></hw>
     </nxp_compatible_hw>
+    <nxp_ebh_hw>
+        <ebh id="mikroe_tft_proto_5_capacitive"></ebh>
+    </nxp_ebh_hw>
     <peripherals>
         <peripheral name="display"></peripheral>
     </peripherals>
     <categories>
-        <category name="aiml"></category>
         <category name="graphics"></category>
+        <category name="aiml"></category>
     </categories>
 </data:item>

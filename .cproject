@@ -931,10 +931,10 @@
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
 		<configuration configurationName="Debug">
-			<resource resourceType="PROJECT" workspacePath="/frdmmcxn947_lvgl_demo_widgets_bm"/>
+			<resource resourceType="PROJECT" workspacePath="/npu_vs_tensorflm"/>
 		</configuration>
 		<configuration configurationName="Release">
-			<resource resourceType="PROJECT" workspacePath="/frdmmcxn947_lvgl_demo_widgets_bm"/>
+			<resource resourceType="PROJECT" workspacePath="/npu_vs_tensorflm"/>
 		</configuration>
 	</storageModule>
 	<storageModule moduleId="openCmsis"/>
